@@ -1,4 +1,5 @@
 * {
+  background-color: #fbfbfb;
   padding: 0;
   margin: 0;
   text-decoration: none;
@@ -9,16 +10,65 @@
 
 header {
   width: 100%;
-  height: 1080px;
-  background-color: #fbfbfb;
-}
-
-section {
+  height: 100px;
   display: flex;
+  justify-content: center;
   align-items: center;
 }
 
 nav {
   display: flex;
   gap: 93px;
+  padding-left: 207px;
+}
+
+header > h1 {
+  margin-left: 19px;
+  color: #445964;
+}
+
+nav > a {
+  font-size: 20px;
+  color: #445964;
+}
+
+section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 140px;
+  gap: 167px;
+}
+
+aside > h2 {
+  color: #445964;
+  font-size: 24px;
+}
+
+h2 > span {
+  font-size: 72px;
+  font-weight: 900;
+  width: 545px;
+}
+
+button {
+  width: 310px;
+  height: 65px;
+  background-color: #263138;
+  border-radius: 20px;
+  color: #ffffff;
+  font-size: 22px;
+  margin-top: 130px;
+  margin-bottom: 175px;
+}
+
+aside :last-child {
+  display: flex;
+  gap: 26px;
+}
+
+.social-media :nth-child(n) {
+  width: 40px;
+  height: 40px;
 }
