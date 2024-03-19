@@ -72,3 +72,64 @@ aside :last-child {
   width: 40px;
   height: 40px;
 }
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 109px;
+}
+
+.description-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.description-about :last-child {
+  font-size: 24px;
+  color: #445964;
+}
+
+.description-about :first-child {
+  width: 186px;
+  height: 207px;
+}
+
+.description-about :nth-child(2) {
+  font-size: 64px;
+  color: #445964;
+}
+
+.hard-skills {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-skill {
+  display: flex;
+  gap: 8px;
+}
+
+.icon-box {
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+  border: 3px solid #445964;
+}
+
+.skill-complete {
+  background-color: #445964;
+}
