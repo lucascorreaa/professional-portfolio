@@ -3,6 +3,8 @@
   padding: 0;
   margin: 0;
   text-decoration: none;
+  border: none;
+  transition: 2ms all;
   box-sizing: border-box;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -52,7 +54,7 @@ h2 > span {
   width: 545px;
 }
 
-button {
+aside > button {
   width: 310px;
   height: 65px;
   background-color: #263138;
@@ -105,7 +107,10 @@ main {
 }
 
 .hard-skills {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 80px;
+  gap: 80px;
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -116,6 +121,12 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 20px;
+}
+
+.box-content :first-child {
+  font-size: 30px;
+  color: #445964;
 }
 
 .box-skill {
@@ -132,4 +143,206 @@ main {
 
 .skill-complete {
   background-color: #445964;
+}
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  justify-content: center;
+  margin-left: 235px;
+  margin-top: 109px;
+}
+
+.title-portfolio {
+  display: flex;
+  gap: 91px;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.title-portfolio p, .title-portfolio span {
+  font-size: 64px;
+  color: #445964;
+  font-weight: bold;
+}
+
+.title-portfolio span {
+  color: #263138;
+}
+
+.title-portfolio :last-child {
+  font-size: 24px;
+  width: 398px;
+  align-self: flex-end;
+}
+
+.portfolio-filter {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 75px;
+}
+
+.portfolio-filter > button {
+  width: auto;
+  height: 65px;
+  background-color: #DFDFDF;
+  border-radius: 20px;
+  padding: 18px 30px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #445964;
+}
+
+.portfolio-filter > button:hover {
+  color: #ffffff;
+  background-color: #263138;
+}
+
+.card-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+  width: 100%;
+}
+
+.card-content > div {
+  width: 380px;
+  height: 260px;
+  background-color: #445964;
+  border-radius: 20px;
+}
+
+.card-content > div:nth-child(even) {
+  background-color: #263138;
+}
+
+.tech {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 109px;
+}
+
+.tech > p:first-child {
+  font-size: 64px;
+  color: #445964;
+  font-weight: bold;
+}
+
+.tech > p > span {
+  color: #263138;
+}
+
+.tech-description {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 109px;
+  text-align: center;
+  margin-top: 117px;
+}
+
+.tech-description p {
+  font-size: 24px;
+  color: #445964;
+}
+
+.tech-title {
+  font-size: 36px !important;
+  font-weight: bold;
+}
+
+.tech-title span {
+  color: #263138;
+}
+
+.image-content {
+  display: flex;
+  gap: 100px;
+}
+
+.professional {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 107px;
+}
+
+.title-professional {
+  display: flex;
+  gap: 91px;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 170px;
+  margin-right: 235px;
+}
+
+.title-professional p, .title-professional span {
+  font-size: 64px;
+  color: #445964;
+  font-weight: bold;
+}
+
+.title-professional span {
+  color: #263138;
+}
+
+.title-professional :first-child {
+  font-size: 24px;
+  width: 398px;
+  align-self: flex-end;
+}
+
+.professional-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 61px;
+}
+
+.professional-content :nth-child(even) {
+  background-color: #445964;
+}
+
+.even-margin {
+  margin-top: -60px;
+}
+
+.even-color {
+  color: #263138 !important;
+}
+
+.professional-card {
+  width: 530px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  border-radius: 20px;
+  background-color: #263138;
+  text-align: center;
+}
+
+.professional-card .title {
+  color: #445964;
+  font-size: 36px;
+  font-weight: bold;
+  background-color: transparent;
+}
+
+.professional-card :last-child {
+  width: 495px;
+  font-size: 24px;
+  background-color: transparent;
+  color: #ffffff;
+  height: auto;
 }
